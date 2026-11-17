@@ -2,7 +2,7 @@
 
 Plataforma de comercio electrónico full-stack para **Casa Matriarcada**, un negocio
 local ubicado en Bogotá D.C., Colombia, dedicado a la venta de productos artesanales de
-marca colombiana —mochilas wayú, sombreros vueltiaos, lanchetas y souvenirs— junto a café
+marca colombiana —mochilas wayú, sombreros vueltiaos, anchetas y souvenirs— junto a café
 de origen.
 
 El objetivo del proyecto es ofrecer a los clientes un canal de venta en línea que permita
@@ -117,7 +117,7 @@ limita el alcance del negocio a los clientes que visitan físicamente el local.
 ## 📂 Arquitectura del proyecto
 
 ```
-E-commerce_cafe_y_Luci/
+E-commerce_Casa_Matriarcada/
 ├── backend/
 │   ├── config/
 │   │   ├── db.js                    # Conexión a MongoDB Atlas (Mongoose)
@@ -214,8 +214,8 @@ E-commerce_cafe_y_Luci/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/KitsuXSTL/E-commerce_cafe_y_Luci.git
-cd E-commerce_cafe_y_Luci
+git clone https://github.com/KitsuXSTL/E-commerce_Casa_Matriarcada.git
+cd E-commerce_Casa_Matriarcada
 
 # 2. Instalar dependencias
 npm install
@@ -315,7 +315,7 @@ por cada operación y ejecutar peticiones de prueba contra el servidor.
 | `limite` | Productos por página | 20 |
 | `pagina` | Número de página | 1 |
 
-**Categorías disponibles:** `mochilas`, `sombreros`, `lanchetas`, `bebidas`, `souvenirs`, `otros`
+**Categorías disponibles:** `mochilas`, `sombreros`, `anchetas`, `bebidas`, `souvenirs`, `otros`
 
 ### Autenticación
 

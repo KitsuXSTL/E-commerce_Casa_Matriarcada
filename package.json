@@ -1,7 +1,7 @@
 {
-  "name": "artesanias-cafe-y-luci",
+  "name": "casa-matriarcada",
   "version": "1.0.0",
-  "description": "E-commerce full-stack para Artesanías y Café Luci, negocio de artesanías colombianas y café de origen en Bogotá",
+  "description": "E-commerce full-stack para Casa Matriarcada, negocio de artesanías colombianas y café de origen en Bogotá",
   "main": "backend/server.js",
   "type": "commonjs",
   "scripts": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KitsuXSTL/E-commerce_cafe_y_Luci.git"
+    "url": "git+https://github.com/KitsuXSTL/E-commerce_Casa_Matriarcada.git"
   },
   "keywords": ["ecommerce", "nodejs", "express", "mongodb", "artesanias", "colombia"],
   "author": "Juan Sebastián Torres Agudelo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KitsuXSTL/E-commerce_cafe_y_Luci/issues"
+    "url": "https://github.com/KitsuXSTL/E-commerce_Casa_Matriarcada/issues"
   },
-  "homepage": "https://github.com/KitsuXSTL/E-commerce_cafe_y_Luci#readme",
+  "homepage": "https://github.com/KitsuXSTL/E-commerce_Casa_Matriarcada#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",

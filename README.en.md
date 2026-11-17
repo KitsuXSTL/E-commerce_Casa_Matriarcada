@@ -2,7 +2,7 @@
 
 Full-stack e-commerce platform for **Casa Matriarcada**, a local business in
 Bogotá D.C., Colombia, selling Colombian handicrafts — wayú bags, vueltiao hats,
-lanchetas and souvenirs — alongside single-origin coffee.
+anchetas and souvenirs — alongside single-origin coffee.
 
 The project aims to give customers an online channel to browse the catalog, manage a
 shopping cart and complete transactions securely through the PSE payment gateway.
@@ -114,7 +114,7 @@ happen in person only, which limits the business to customers who visit the stor
 ## 📂 Project architecture
 
 ```
-E-commerce_cafe_y_Luci/
+E-commerce_Casa_Matriarcada/
 ├── backend/
 │   ├── config/
 │   │   ├── db.js                    # MongoDB Atlas connection (Mongoose)
@@ -211,8 +211,8 @@ E-commerce_cafe_y_Luci/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/KitsuXSTL/E-commerce_cafe_y_Luci.git
-cd E-commerce_cafe_y_Luci
+git clone https://github.com/KitsuXSTL/E-commerce_Casa_Matriarcada.git
+cd E-commerce_Casa_Matriarcada
 
 # 2. Install dependencies
 npm install
@@ -311,7 +311,7 @@ accepts, and run test requests against the server.
 | `limite` | Products per page | 20 |
 | `pagina` | Page number | 1 |
 
-**Available categories:** `mochilas`, `sombreros`, `lanchetas`, `bebidas`, `souvenirs`, `otros`
+**Available categories:** `mochilas`, `sombreros`, `anchetas`, `bebidas`, `souvenirs`, `otros`
 
 ### Authentication
 

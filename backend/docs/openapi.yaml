@@ -1,15 +1,15 @@
 openapi: 3.0.3
 
 info:
-  title: API Artesanías y Café Luci
+  title: API Casa Matriarcada
   description: |
     API REST para la gestión del catálogo de productos artesanales
-    y café de Artesanías y Café Luci, negocio local ubicado en
+    y café de Casa Matriarcada, negocio local ubicado en
     Bogotá D.C., Colombia.
   version: 1.0.0
   contact:
     name: Juan Sebastián Torres Agudelo
-    url: https://github.com/KitsuXSTL/artesanias-cafe-luci
+    url: https://github.com/KitsuXSTL/E-commerce_Casa_Matriarcada
   license:
     name: MIT
 
@@ -33,7 +33,7 @@ paths:
           description: Filtra por categoría
           schema:
             type: string
-            enum: [mochilas, sombreros, lanchetas, bebidas, souvenirs, otros]
+            enum: [mochilas, sombreros, anchetas, bebidas, souvenirs, otros]
         - name: buscar
           in: query
           description: Búsqueda de texto sobre nombre y descripción
@@ -216,7 +216,7 @@ components:
           example: 8
         categoria:
           type: string
-          enum: [mochilas, sombreros, lanchetas, bebidas, souvenirs, otros]
+          enum: [mochilas, sombreros, anchetas, bebidas, souvenirs, otros]
           example: mochilas
         imagenes:
           type: array
@@ -266,7 +266,7 @@ components:
           example: 5
         categoria:
           type: string
-          enum: [mochilas, sombreros, lanchetas, bebidas, souvenirs, otros]
+          enum: [mochilas, sombreros, anchetas, bebidas, souvenirs, otros]
           example: sombreros
         imagenes:
           type: array
