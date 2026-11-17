@@ -16,7 +16,7 @@ segura mediante la pasarela de pagos PSE.
 ## 📋 Tabla de contenidos
 
 - [Descripción del proyecto](#-descripción-del-proyecto)
-- [Estado del desarrollo](#-estado-del-desarrollo)
+- [Vista de la página](#-vista-de-la-página)
 - [Requerimientos funcionales](#-requerimientos-funcionales)
 - [Requerimientos no funcionales](#-requerimientos-no-funcionales)
 - [Stack tecnológico](#-stack-tecnológico)
@@ -52,21 +52,30 @@ limita el alcance del negocio a los clientes que visitan físicamente el local.
 
 ---
 
-## 🚧 Estado del desarrollo
+## 🖥 Vista de la página
 
-| Área | Estado |
-|------|--------|
-| Servidor Express y conexión a MongoDB Atlas | ✅ Completado |
-| Modelo de datos y validaciones | ✅ Completado |
-| API REST del catálogo (CRUD) | ✅ Completado |
-| Especificación OpenAPI 3.0 y Swagger UI | ✅ Completado |
-| Interfaz: página de inicio y estilos globales | 🔄 En progreso |
-| Catálogo dinámico en el cliente | ⏳ Pendiente |
-| Carrito de compras | ⏳ Pendiente |
-| Autenticación (JWT + Google OAuth) | ⏳ Pendiente |
-| Panel de administración | ⏳ Pendiente |
-| Integración con PSE | ⏳ Pendiente |
-| Despliegue | ⏳ Pendiente |
+Capturas de la interfaz en funcionamiento. Las categorías, su conteo de productos y las
+tarjetas del catálogo se generan dinámicamente a partir de la API REST y de la base de datos
+en MongoDB Atlas.
+
+### Página de inicio
+
+Banner principal con video de fondo, mensaje de la marca y accesos directos a la tienda.
+
+![Página de inicio de Casa Matriarcada con el banner principal](documentacion/capturas/inicio-banner.jpg)
+
+### Identidad de la marca
+
+Sección de presentación del negocio con el logo de Casa Matriarcada.
+
+![Sección de marca con el logo de Casa Matriarcada](documentacion/capturas/inicio-marca.png)
+
+### Categorías y productos recientes
+
+Tarjetas de categorías con el número de productos de cada una y listado de los productos
+más recientes del taller.
+
+![Categorías del catálogo y productos más recientes](documentacion/capturas/inicio-catalogo.jpg)
 
 ---
 

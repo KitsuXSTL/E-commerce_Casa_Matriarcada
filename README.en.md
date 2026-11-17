@@ -14,7 +14,7 @@ shopping cart and complete transactions securely through the PSE payment gateway
 ## 📋 Table of contents
 
 - [Project description](#-project-description)
-- [Development status](#-development-status)
+- [Page preview](#-page-preview)
 - [Functional requirements](#-functional-requirements)
 - [Non-functional requirements](#-non-functional-requirements)
 - [Tech stack](#-tech-stack)
@@ -49,21 +49,29 @@ happen in person only, which limits the business to customers who visit the stor
 
 ---
 
-## 🚧 Development status
+## 🖥 Page preview
 
-| Area | Status |
-|------|--------|
-| Express server and MongoDB Atlas connection | ✅ Done |
-| Data model and validation | ✅ Done |
-| Catalog REST API (CRUD) | ✅ Done |
-| OpenAPI 3.0 specification and Swagger UI | ✅ Done |
-| Frontend: homepage and global styles | 🔄 In progress |
-| Client-side dynamic catalog | ⏳ Pending |
-| Shopping cart | ⏳ Pending |
-| Authentication (JWT + Google OAuth) | ⏳ Pending |
-| Admin panel | ⏳ Pending |
-| PSE integration | ⏳ Pending |
-| Deployment | ⏳ Pending |
+Screenshots of the running interface. Categories, their product counts and the catalog
+cards are rendered dynamically from the REST API and the MongoDB Atlas database.
+
+### Homepage
+
+Main banner with a background video, the brand message and quick links to the store.
+
+![Casa Matriarcada homepage with the main banner](documentacion/capturas/inicio-banner.jpg)
+
+### Brand identity
+
+Section introducing the business with the Casa Matriarcada logo.
+
+![Brand section with the Casa Matriarcada logo](documentacion/capturas/inicio-marca.png)
+
+### Categories and latest products
+
+Category cards showing how many products each one contains, followed by the workshop's
+latest products.
+
+![Catalog categories and latest products](documentacion/capturas/inicio-catalogo.jpg)
 
 ---
 
