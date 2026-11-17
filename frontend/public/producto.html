@@ -3,30 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Producto — Artesanías y Café Luci</title>
+  <title>Producto — Casa Matriarcada</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="icon" href="/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
   <header class="header">
     <div class="contenedor header__interior">
+
       <a href="/" class="logo">
-        <span class="logo__nombre">Artesanías</span>
-        <span class="logo__inferior">&amp; CAFÉ LUCI</span>
+        <img src="/img/logo-marca.png" alt="" class="logo__marca" width="260" height="189">
+        <span class="logo__texto">
+          <span class="logo__nombre">Casa Matriarcada</span>
+          <span class="logo__inferior">ARTE &middot; CULTURA &middot; COLOMBIA</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
         <ul class="nav__lista">
           <li><a href="/" class="nav__enlace">Inicio</a></li>
           <li><a href="/tienda.html" class="nav__enlace">Tienda</a></li>
-          <li><a href="/categorias.html" class="nav__enlace">Categorías</a></li>
           <li><a href="/nosotros.html" class="nav__enlace">Nosotros</a></li>
-          <li><a href="/contacto.html" class="nav__enlace">Contacto</a></li>
+          <li><a href="#contacto" class="nav__enlace">Contacto</a></li>
         </ul>
       </nav>
 
@@ -45,6 +49,7 @@
           </svg>
         </button>
       </div>
+
     </div>
   </header>
 
@@ -62,33 +67,49 @@
     </div>
   </main>
 
-  <footer class="footer">
+  <!-- id="contacto": el enlace del menú salta hasta aquí -->
+  <footer class="footer" id="contacto">
     <div class="contenedor">
       <div class="footer__interior">
+
         <div>
-          <h3 class="footer__titulo">Artesanías y Café Luci</h3>
+          <h3 class="footer__titulo">Casa Matriarcada</h3>
           <p class="footer__lista">
-            Artesanías colombianas y café de origen.<br>
-            Bogotá D.C., Colombia.
+            Donde las raíces se convierten en arte.<br>
+            Artesanías colombianas y café de origen.
           </p>
         </div>
+
         <div>
           <h3 class="footer__titulo">Tienda</h3>
           <ul class="footer__lista">
             <li><a href="/tienda.html">Todos los productos</a></li>
             <li><a href="/categorias.html">Categorías</a></li>
-            <li><a href="/carrito.html">Mi carrito</a></li>
+            <li><a href="/nosotros.html">Sobre nosotros</a></li>
           </ul>
         </div>
+
         <div>
           <h3 class="footer__titulo">Contacto</h3>
           <ul class="footer__lista">
-            <li><a href="/nosotros.html">Sobre nosotros</a></li>
-            <li><a href="/contacto.html">Escríbenos</a></li>
+            <li>
+              <a class="canal-footer"
+                 href="https://www.instagram.com/artesaniascasamatriarcada/"
+                 target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1"/>
+              </svg>
+                @artesaniascasamatriarcada
+              </a>
+            </li>
+            <li>Cra 7 #12a-05, Bogotá D.C.</li>
           </ul>
         </div>
+
       </div>
-      <p class="footer__legal">© 2026 Artesanías y Café Luci. Todos los derechos reservados.</p>
+      <p class="footer__legal">&copy; 2026 Casa Matriarcada. Todos los derechos reservados.</p>
     </div>
   </footer>
 

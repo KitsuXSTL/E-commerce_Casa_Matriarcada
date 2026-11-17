@@ -1,5 +1,5 @@
 /* ============================================
-   Artesanías y Café Luci — Hoja de estilos global
+   Casa Matriarcada — Hoja de estilos global
    Mobile first
    ============================================ */
 
@@ -14,6 +14,7 @@
   --terracota-claro: #A9501F;
   --dorado: #E8A93C;
   --linea: #E5D6C2;
+  --fondo-foto: #FFFBF2;   /* mismo tono del fondo de las fotos de producto */
 
   /* Tipografía */
   --serif: 'Playfair Display', Georgia, serif;
@@ -89,8 +90,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
   line-height: 1;
+}
+
+/* Marca ilustrada: alto fijo para que no desajuste la barra */
+.logo__marca {
+  height: 46px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.logo__texto {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo__nombre {
@@ -541,15 +555,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .producto__marco {
   position: relative;
   display: block;
-  aspect-ratio: 3 / 4;
-  background-color: var(--arena);
+  aspect-ratio: 1 / 1;
+  background-color: var(--fondo-foto);
+  border-bottom: 1px solid var(--linea);
+  overflow: hidden;
 }
 
 .producto__imagen {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
+
+.producto:hover .producto__imagen { transform: scale(1.05); }
 
 /* Trama tejida cuando el producto aún no tiene foto */
 .producto__sinimagen {
@@ -657,13 +676,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .detalle__marco {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radio);
   overflow: hidden;
-  background-color: var(--arena);
+  background-color: var(--fondo-foto);
+  border: 1px solid var(--linea);
 }
 
-.detalle__imagen { width: 100%; height: 100%; object-fit: cover; }
+.detalle__imagen { width: 100%; height: 100%; object-fit: contain; }
 
 .detalle__categoria {
   font-size: 0.75rem;
@@ -734,6 +754,33 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .centrado { text-align: center; margin-top: var(--e4); }
 
+/* ---- Banda de marca (landing) ---- */
+.marca {
+  padding-block: var(--e5);
+  background-color: var(--crema);
+  border-block: 1px solid var(--linea);
+  text-align: center;
+}
+
+.marca__interior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--e3);
+}
+
+.marca__logo {
+  width: min(300px, 70vw);
+  height: auto;
+}
+
+.marca__texto {
+  max-width: 54ch;
+  color: var(--tinta-suave);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
 /* ============================================
    APARICIÓN AL HACER SCROLL
    Solo se anima si la persona no pidió reducir movimiento.
@@ -796,10 +843,106 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .categorias { grid-template-columns: repeat(3, 1fr); }
 }
 
+
+/* ============================================
+   PÁGINA DE CATEGORÍAS
+   ============================================ */
+.categorias--amplia {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ============================================
+   CONTENIDO EN PROSA (Nosotros)
+   ============================================ */
+.prosa { max-width: 62ch; }
+
+.prosa p {
+  margin-bottom: var(--e3);
+  color: var(--tinta-suave);
+}
+
+.prosa p:first-of-type {
+  font-size: 1.1875rem;
+  color: var(--tinta);
+}
+
+.prosa h2 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--tinta);
+  margin-top: var(--e5);
+  margin-bottom: var(--e2);
+}
+
+.prosa blockquote {
+  margin: var(--e4) 0;
+  padding-left: var(--e3);
+  border-left: 3px solid var(--dorado);
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--terracota);
+}
+
+/* Cifras del taller */
+.cifras {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--e3);
+  margin-top: var(--e5);
+  padding-top: var(--e4);
+  border-top: 1px solid var(--linea);
+  list-style: none;
+}
+
+.cifra__valor {
+  font-family: var(--serif);
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--terracota);
+  line-height: 1.1;
+}
+
+.cifra__etiqueta {
+  font-size: 0.875rem;
+  color: var(--tinta-suave);
+}
+
+/* ============================================
+   CANALES DE CONTACTO (footer)
+   ============================================ */
+.canal-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.canal-footer svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* El header es fijo: deja aire al saltar al footer desde el menú */
+.footer { scroll-margin-top: 90px; }
+
+/* ============================================
+   LOGO EN PANTALLAS PEQUEÑAS
+   ============================================ */
+@media (max-width: 560px) {
+  .logo__marca { height: 38px; }
+  /* El nombre no debe partirse en dos líneas: estira la barra */
+  .logo__nombre { font-size: 1.125rem; white-space: nowrap; }
+  .logo__inferior { display: none; }
+}
+
 @media (min-width: 900px) {
+  .cifras { grid-template-columns: repeat(4, 1fr); }
   .nav { display: block; }
-  .menu-boton { display: none; }
   .categorias { grid-template-columns: repeat(6, 1fr); }
+  .categorias--amplia { grid-template-columns: repeat(3, 1fr); }
+  .menu-boton { display: none; }
   .footer__interior { grid-template-columns: 2fr 1fr 1fr; }
   .herramientas { grid-template-columns: 1fr auto; align-items: center; }
   .detalle { grid-template-columns: 1fr 1fr; gap: var(--e5); align-items: start; }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Artesanías y Café Luci — Artesanías colombianas hechas a mano</title>
+  <title>Casa Matriarcada — Artesanías colombianas hechas a mano</title>
   <meta name="description" content="Mochilas wayú, sombreros vueltiaos, anchetas y café colombiano. Tienda de artesanías en Bogotá con envíos a todo el país.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,7 @@
   <!-- Precarga la imagen del banner: es el poster del video y el respaldo si no carga -->
   <link rel="preload" as="image" href="/img/hero.webp" type="image/webp">
 
+  <link rel="icon" href="/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -21,17 +22,19 @@
     <div class="contenedor header__interior">
 
       <a href="/" class="logo">
-        <span class="logo__nombre">Artesanías</span>
-        <span class="logo__inferior">&amp; CAFÉ LUCI</span>
+        <img src="/img/logo-marca.png" alt="" class="logo__marca" width="260" height="189">
+        <span class="logo__texto">
+          <span class="logo__nombre">Casa Matriarcada</span>
+          <span class="logo__inferior">ARTE &middot; CULTURA &middot; COLOMBIA</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
         <ul class="nav__lista">
           <li><a href="/" class="nav__enlace" aria-current="page">Inicio</a></li>
           <li><a href="/tienda.html" class="nav__enlace">Tienda</a></li>
-          <li><a href="/categorias.html" class="nav__enlace">Categorías</a></li>
           <li><a href="/nosotros.html" class="nav__enlace">Nosotros</a></li>
-          <li><a href="/contacto.html" class="nav__enlace">Contacto</a></li>
+          <li><a href="#contacto" class="nav__enlace">Contacto</a></li>
         </ul>
       </nav>
 
@@ -73,18 +76,33 @@
         <div class="hero__bandera"><span></span><span></span><span></span></div>
         <p class="hero__eyebrow">HECHO EN COLOMBIA</p>
         <h1 class="hero__titulo">
-          Artesanías colombianas
-          <em>y café de origen</em>
+          Un pedacito de Colombia
+          <em>para llevar</em>
         </h1>
         <p class="hero__texto">
-          Mochilas wayú y sombreros vueltiaos hechos a mano por artesanos de
-          La Guajira y Córdoba, anchetas para regalar y café de fincas
-          colombianas. Desde Bogotá para todo el país.
+          Mochilas wayú, sombreros vueltiaos y pocillos pintados a mano por
+          artesanos de La Guajira, Córdoba y el eje cafetero, anchetas para
+          regalar y café de origen. Desde Bogotá para todo el país.
         </p>
         <div class="hero__acciones">
           <a href="/tienda.html" class="boton boton--principal">Ver la tienda</a>
-          <a href="/nosotros.html" class="boton boton--claro">Conocer el taller</a>
+          <a href="/nosotros.html" class="boton boton--claro">Conocer la casa</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Banda de marca: identidad de la tienda en la landing -->
+    <section class="marca">
+      <div class="contenedor marca__interior">
+        <img src="/img/logo.png"
+             alt="Casa Matriarcada — Arte, cultura, Colombia"
+             class="marca__logo" width="568" height="583">
+        <p class="marca__texto">
+          Cada pieza nace de manos colombianas. Trabajamos directo con tejedoras
+          de La Guajira, sombrereros de Córdoba y caficultores del Eje Cafetero,
+          sin intermediarios que diluyan su trabajo.
+        </p>
+        <a href="/nosotros.html" class="boton boton--contorno">Conocer el taller</a>
       </div>
     </section>
 
@@ -123,33 +141,49 @@
 
   </main>
 
-  <footer class="footer">
+  <!-- id="contacto": el enlace del menú salta hasta aquí -->
+  <footer class="footer" id="contacto">
     <div class="contenedor">
       <div class="footer__interior">
+
         <div>
-          <h3 class="footer__titulo">Artesanías y Café Luci</h3>
+          <h3 class="footer__titulo">Casa Matriarcada</h3>
           <p class="footer__lista">
-            Artesanías colombianas y café de origen.<br>
-            Bogotá D.C., Colombia.
+            Donde las raíces se convierten en arte.<br>
+            Artesanías colombianas y café de origen.
           </p>
         </div>
+
         <div>
           <h3 class="footer__titulo">Tienda</h3>
           <ul class="footer__lista">
             <li><a href="/tienda.html">Todos los productos</a></li>
             <li><a href="/categorias.html">Categorías</a></li>
-            <li><a href="/carrito.html">Mi carrito</a></li>
+            <li><a href="/nosotros.html">Sobre nosotros</a></li>
           </ul>
         </div>
+
         <div>
           <h3 class="footer__titulo">Contacto</h3>
           <ul class="footer__lista">
-            <li><a href="/nosotros.html">Sobre nosotros</a></li>
-            <li><a href="/contacto.html">Escríbenos</a></li>
+            <li>
+              <a class="canal-footer"
+                 href="https://www.instagram.com/artesaniascasamatriarcada/"
+                 target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1"/>
+              </svg>
+                @artesaniascasamatriarcada
+              </a>
+            </li>
+            <li>Cra 7 #12a-05, Bogotá D.C.</li>
           </ul>
         </div>
+
       </div>
-      <p class="footer__legal">© 2026 Artesanías y Café Luci. Todos los derechos reservados.</p>
+      <p class="footer__legal">&copy; 2026 Casa Matriarcada. Todos los derechos reservados.</p>
     </div>
   </footer>
 

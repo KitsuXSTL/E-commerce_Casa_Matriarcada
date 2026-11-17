@@ -28,7 +28,7 @@ export async function iniciarDetalle() {
     const { data } = await obtenerProductoPorId(id);
 
     contenedor.innerHTML = plantillaDetalle(data);
-    document.title = `${data.nombre} — Artesanías y Café Luci`;
+    document.title = `${data.nombre} — Casa Matriarcada`;
 
     // Actualiza las migas de pan con el nombre real
     const miga = document.getElementById('miga-actual');
